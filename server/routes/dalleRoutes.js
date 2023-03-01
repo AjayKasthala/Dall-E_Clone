@@ -20,6 +20,7 @@ router.route('/').get((req, res) => {
     res.status(200).json({ message: 'Hello from DALL-E!' });
   });
 
+
 router.route('/').get(async(req,res) => {
     try {
         const { prompt } = req.body;
